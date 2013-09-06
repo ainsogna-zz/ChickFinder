@@ -10,6 +10,7 @@
 #import <MapKit/MKCircle.h>
 
 @interface ChickFinderViewController ()
+@property (weak, nonatomic) IBOutlet UISlider *sliderDistance;
 
 @end
 
@@ -31,12 +32,18 @@
     self.locationController = [[MyCLController alloc] init];
     //[self.locationController.locationManager startUpdatingLocation];
     
+    self.searchController = [[MySearchController alloc] init];
+    
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(37.33233141, -122.03121860);
-    MKCircle* circle = [MKCircle circleWithCenterCoordinate:coord radius:2000.0];
+    MKCircle* circle = [MKCircle circleWithCenterCoordinate:coord
+                                                     radius:self.sliderDistance.value];
     
     [self.locationController registerRegionWithCircularOverlay:circle
                                                  andIdentifier:@"testRegion"];
                                      
+}
+
+- (IBAction)sliderAction:(id)sender {
 }
 
 @end

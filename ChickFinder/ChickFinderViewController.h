@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 #import "MyCLController.h"
+#import "MySearchController.h"
 
 @interface ChickFinderViewController : UIViewController
 
 @property (strong, nonatomic) MyCLController* locationController;
+@property (strong, nonatomic) MySearchController* searchController;
 
 @end

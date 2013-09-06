@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		932E37AD17C5B7E700EFBC65 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932E37AC17C5B7E700EFBC65 /* MapKit.framework */; };
+		932E37B017D51BC300EFBC65 /* MySearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932E37AF17D51BC300EFBC65 /* MySearchController.m */; };
 		93B6BD3E17BB456B00474D4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B6BD3D17BB456B00474D4F /* UIKit.framework */; };
 		93B6BD4017BB456B00474D4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B6BD3F17BB456B00474D4F /* Foundation.framework */; };
 		93B6BD4217BB456B00474D4F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B6BD4117BB456B00474D4F /* CoreGraphics.framework */; };
@@ -25,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		932E37AC17C5B7E700EFBC65 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		932E37AE17D51BC300EFBC65 /* MySearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySearchController.h; sourceTree = "<group>"; };
+		932E37AF17D51BC300EFBC65 /* MySearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySearchController.m; sourceTree = "<group>"; };
 		93B6BD3A17BB456B00474D4F /* ChickFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChickFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B6BD3D17BB456B00474D4F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		93B6BD3F17BB456B00474D4F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,14 +97,14 @@
 		93B6BD4317BB456B00474D4F /* ChickFinder */ = {
 			isa = PBXGroup;
 			children = (
-				93B6BD4C17BB456B00474D4F /* ChickFinderAppDelegate.h */,
-				93B6BD4D17BB456B00474D4F /* ChickFinderAppDelegate.m */,
 				93B6BD5517BB456B00474D4F /* MainStoryboard.storyboard */,
 				93B6BD5817BB456B00474D4F /* ChickFinderViewController.h */,
 				93B6BD5917BB456B00474D4F /* ChickFinderViewController.m */,
 				93B6BD4417BB456B00474D4F /* Supporting Files */,
 				93B6BD6217BBB2F300474D4F /* MyCLController.h */,
 				93B6BD6317BBB2F300474D4F /* MyCLController.m */,
+				932E37AE17D51BC300EFBC65 /* MySearchController.h */,
+				932E37AF17D51BC300EFBC65 /* MySearchController.m */,
 			);
 			path = ChickFinder;
 			sourceTree = "<group>";
@@ -109,6 +112,8 @@
 		93B6BD4417BB456B00474D4F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				93B6BD4C17BB456B00474D4F /* ChickFinderAppDelegate.h */,
+				93B6BD4D17BB456B00474D4F /* ChickFinderAppDelegate.m */,
 				93B6BD4517BB456B00474D4F /* ChickFinder-Info.plist */,
 				93B6BD4617BB456B00474D4F /* InfoPlist.strings */,
 				93B6BD4917BB456B00474D4F /* main.m */,
@@ -191,6 +196,7 @@
 				93B6BD4E17BB456B00474D4F /* ChickFinderAppDelegate.m in Sources */,
 				93B6BD5A17BB456B00474D4F /* ChickFinderViewController.m in Sources */,
 				93B6BD6417BBB2F300474D4F /* MyCLController.m in Sources */,
+				932E37B017D51BC300EFBC65 /* MySearchController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
